@@ -1,0 +1,17 @@
+header{
+  background-color: #d3d3d3;
+}
+nav{
+  background-color: #aed8e6;
+  color: white;
+  padding: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav h1{
+  font-family:;
+}
