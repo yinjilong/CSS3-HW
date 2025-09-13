@@ -1,0 +1,92 @@
+/* *{
+    border-width:1px;
+    border-style:dashed;
+    border-color:red;
+} */
+
+html {
+    background-color: #f0f0f0;
+    width: 98%;
+    margin: 0 auto;
+}
+
+body{
+    background: no-repeat url("../images/background.png");
+    background-size: cover;
+    min-height: 100vh; /* 100% of viewport height */
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+img.logo{
+    width: 120px;
+    height: auto;
+}
+
+nav{
+    display:flex;
+    align-items:flex-end;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+nav ul li.current {
+  background-color: orange;
+}
+
+nav ul li.current a{
+  text-decoration: none;  
+  background-color: orange;
+  color: white;
+}
+
+
+.dashboards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px; /* space between cards */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-card {
+  width: 400px;   /* take full width of parent */
+  height: auto;  /* keep aspect ratio */
+  object-fit: contain; /* prevent distortion */
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  padding: 10px;
+  margin: 2px; /* center the card */
+}
+.dashboard-card img {
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.dashboard-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+
+.faq-list li:nth-child(odd) {
+  background-color: lightyellow;
+}
