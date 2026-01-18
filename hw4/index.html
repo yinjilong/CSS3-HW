@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Neighborhood Walk</title>
+    <!-- You will need to link to the CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+</head>
+
+<body onload="onLoadPage()">
+    <header>
+        <h1>Image gallary</h1>
+    </header>
+    <button id="refreshBtn" onclick="setImages()">Change Images</button>
+
+    <main id="main">
+        <div class="flex" id="gallary">
+            <a href="" data-lightbox="images" data-title="">
+                <img src="images/bacon_in_the_woods.png"
+                    alt="brown labradoodle sitting near a stream in a wooded setting" width="100" tabindex="0">
+            </a>
+            <img src="images/bacon_near_the_fort.png"
+                alt="brown labradoodle posing in front of a makeshift fort made of branches" width="100" tabindex="1">
+            <img src="images/downed_tree.png" alt="a downed tree crossign a stream" width="100" tabindex="2">
+        </div>
+
+    </main>
+    <footer>
+        <p>This page was originally created by Colleen van Lent for the <a
+                href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
+            Students are invited to make changes.</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
+
+</html>
